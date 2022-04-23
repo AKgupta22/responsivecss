@@ -1,0 +1,259 @@
+/* Reset  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation bar  */
+/* main nav bar container  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+
+}
+
+/* navbar opacity background and zindex */
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* navbar logo */
+.logo {
+    margin: 10px 34px;
+
+}
+
+/* navbar logo image  */
+.logo img {
+    height: 60px;
+    margin: 4px 10px;
+}
+
+/* list style*/
+#navbar ul {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbar ul li {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 1.3rem;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* navbar ends  */
+
+/* home section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 220px;
+    justify-content: center;
+    align-items: center;
+    height: 465px;
+    top: 0;
+    left: 0;
+}
+
+#home::before {
+    content: "";
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 558px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* h1 and p styling  */
+#home h1 {
+    text-align: center;
+    color: #6A2C70;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* home section end  */
+
+/* services section  */
+#services {
+    margin: 35px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    margin: 3px 7px;
+    padding: 30px;
+    border-radius: 24px;
+    background-color: #e5e3e3;
+
+}
+
+#services .box img {
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+/* services section ends  */
+
+/* Client section  */
+#client-main {
+    height: 344px;
+    position: relative;
+}
+
+#client-main::before {
+    content: "";
+    position: absolute;
+    background: url('../bg.jpg');
+    height: 100%;
+    width: 100%;
+    opacity: .4;
+    z-index: -1;
+
+}
+
+.client-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.client-name {
+    padding: 35px;
+}
+
+.client-name img {
+    height: 125px;
+}
+
+/* client section ends  */
+
+/* contact us section */
+
+#contact-sec {
+    position: relative;
+}
+
+#contact-sec::before {
+    content: "";
+    position: absolute;
+    background: url('../contact.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+    z-index: -1;
+
+}
+
+.form-sec {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.form-sec input,
+.form-sec textarea {
+    width: 100%;
+    padding: .5rem;
+    resize: none;
+    font-family: 'Bree Serif', serif;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.form-sec form {
+    width: 30%;
+}
+
+.form-sec label {
+
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    text-transform: capitalize;
+}
+
+/* contact us section ends */
+
+/* footer section */
+footer {
+    background-color: #ef3f49;
+    color: blanchedalmond;
+    padding: 10px 20px;
+}
+
+/* footer section ends  */
+
+/* resuable classes  */
+.h-primary {
+    font-size: 3.2rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+
+
+}
+
+.h-secondary {
+    font-size: 1.7rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+
+
+}
+
+.btn {
+    border: 2px solid white;
+    color: white;
+    background-color: #ef3f49;
+    padding: 6px 22px;
+    margin: 15px;
+    font-size: 1.4rem;
+    text-align: center;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: white;
+    color: black
+}
+
+.center {
+    text-align: center;
+}
+
+/* resuable classes  */
